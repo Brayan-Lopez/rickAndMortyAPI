@@ -1,0 +1,293 @@
+.App{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../public/Frame432.png) , url(../public/Frame431.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, center 103%;
+  background-size: 165% auto, 150% auto ;
+}
+/*
+Plitzville Montana : 0
+Citadel of Ricks : 101
+*/
+
+/* titulo y buscador */
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem 2rem 1rem;
+  gap: 2rem;
+}
+.title{
+  min-width: 320px;
+  max-width: 400px;
+  margin: 0;
+}
+.title img{
+  width: 100%;
+}
+
+.serch{
+  width: 100%;
+  margin: 2rem;
+}
+.search input{
+  position: relative;
+  font-weight: 600;
+  font-size: 1.15rem;
+  border: solid 4px #893446;
+  border-radius: 1.2rem;
+  width: 320px;
+  height: 2.5rem;
+  color: #242424;
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+.search input:focus{
+  border: solid 4px #893446;
+  box-shadow: none;
+  outline: none;
+}
+.search ul{
+  list-style: none;
+  background-color: #856888db;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  border-radius: 1.2rem;
+  padding: .5rem 1rem;
+  width: 308px;
+  border: solid 4px #893446;
+  transform: translate(2%,0%);
+}
+.search ul li{
+  margin: .3rem 0;
+  padding: 0 .4rem;
+  border-radius: .5rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+.search ul li:hover{
+  color: #242424;
+  background-color: #c9bedc;
+  cursor: pointer;
+}
+
+/*informacion de la dimension actual*/
+.location{
+  width: 100%;
+  padding: 0 1rem;
+}
+.location-Wrapper{
+  max-width: 40rem;
+  background-color: #c9bedc;
+  margin: 0 auto;
+  border: solid 4px #893446;
+  border-radius: 1.3rem;
+}
+.location h2{
+  background-color: #ede288;
+  color: #893446;
+  border-radius: 1.1rem;
+  height: 3rem;
+  text-align: center;
+  padding: .4rem;
+  margin-bottom: 1rem;
+}
+.location ul{
+  list-style: none;
+  margin: 1rem;
+}
+.location ul li{
+  font-weight: 500;
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.location ul li span:first-child{
+  text-align: end;
+}
+.location ul li span:last-child{
+  color: #fff;
+}
+
+/*No hay residentes div*/
+.noResident{
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.noResident h2{
+  background-color: #ede288;
+  color: #893446;
+  border-radius: 1.1rem;
+  height: 6.5rem;
+  text-align: center;
+  padding: .4rem;
+  margin-bottom: 1rem;
+}
+
+/*listado de residentes*/
+.residentList{
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+/*tarjeta individual de residentes*/
+.residentCard1{
+  width: 20rem;
+  position: relative;
+  background-color: #856888;
+  border-radius: 1.5rem;
+  border: solid 5px #893446; 
+  margin: 3rem 0;
+}
+.residentCard2{
+  width: 19.3rem;
+  height: 100%;
+  position: relative;
+  background-color: #c9bedc;
+  border-radius: 1.3rem 45% 50% 1.3rem;
+}
+.residentImg{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(70%, -70%);
+}
+.residentImg img{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: solid 5px #893446;
+}
+
+.residentData h2{
+  text-align: center;
+  background-color: #ede288;
+  padding: 3rem 0 1rem;
+  border-radius: 1.3rem;
+  color: #893446;
+}
+.residentData ul{
+  list-style: none;
+  padding: 1rem 3rem;
+  color: #893446;
+}
+.residentData ul li{
+  font-weight: 500;
+  font-size: .8rem;
+  padding: .5rem 0;
+  display: grid;
+  grid-template-columns: repeat(2,  1fr);
+  gap: .8rem;
+}
+.residentData ul li span:last-child{
+  color: #fff;
+}
+
+.status{
+  display: inline-block;
+  background-color: rgb(137, 137, 137);
+  border-radius: 50%;
+  width: .7rem;
+  height: .7rem;
+  transform: translate(0, 11%);
+  margin-right: .3rem;
+}
+.Dead{
+  background-color: rgb(233, 46, 55);
+}
+.Alive{
+  background-color: rgb(0, 252, 101);
+}
+
+/*numeros de página*/
+.numberPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 3rem 3rem 3rem;
+  gap: 1rem;
+  list-style: none;
+}
+.numberPage li{
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #ede288;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: solid 4px #893446;
+  color: #893446;
+  cursor: pointer;
+}
+.numberPage li:hover{
+  background-color: #893446;
+  color: #ede288;
+}
+.numberPageSelect{
+  background-color: #893446;
+  color: #ede288;
+}
+
+@media (min-width: 338px) {
+  .App{
+    background-size: 160% auto, 150% auto ;
+  }
+}
+@media (min-width: 444px) {
+  .App{
+    background-size: 150% auto, 150% auto ;
+  }
+}
+@media (min-width: 453px) {
+  .App{
+    background-size: 140% auto, 140% auto ;
+  }
+}
+@media (min-width: 490px) {
+  .App{
+    background-size: 130% auto, 130% auto ;
+  }
+}
+@media (min-width: 529px) {
+  .App{
+    background-size: 120% auto, 120% auto ;
+  }
+}
+@media (min-width: 565px) {
+  .App{
+    background-size: 110% auto, 110% auto ;
+  }
+}
+@media (min-width: 618px) {
+  .App{
+    background-size: 100% auto, 100% auto ;
+  }
+}
+@media (min-width: 618px) {
+  .App{
+    background-size: 100% auto, 100% auto ;
+  }
+}
+@media (min-width: 680px) {
+  .App{
+    background-image: url(../public/Frame432.png);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
